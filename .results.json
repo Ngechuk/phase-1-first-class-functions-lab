@@ -2,33 +2,27 @@
   "stats": {
     "suites": 8,
     "tests": 13,
-    "passes": 10,
+    "passes": 13,
     "pending": 0,
-    "failures": 3,
-    "start": "2022-12-13T11:06:46.389Z",
-    "end": "2022-12-13T11:06:46.783Z",
-    "duration": 394
+    "failures": 0,
+    "start": "2022-12-13T11:25:59.908Z",
+    "end": "2022-12-13T11:26:00.311Z",
+    "duration": 403
   },
   "tests": [
     {
       "title": "should return a new array containing the first two drivers from the passed-in array",
       "fullTitle": "index.js returnFirstTwoDrivers() should return a new array containing the first two drivers from the passed-in array",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "should return an array of the last two drivers",
       "fullTitle": "index.js returnLastTwoDrivers() should return an array of the last two drivers",
-      "duration": 4,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected [ 'Amari', 'mMo' ] to deeply equal [ 'Amari', 'Mo' ]",
-        "showDiff": true,
-        "actual": "[\n  \"Amari\"\n  \"mMo\"\n]",
-        "expected": "[\n  \"Amari\"\n  \"Mo\"\n]",
-        "stack": "AssertionError: expected [ 'Amari', 'mMo' ] to deeply equal [ 'Amari', 'Mo' ]\n    at Context.<anonymous> (test/indexTest.js:16:75)\n    at processImmediate (node:internal/timers:466:21)"
-      }
+      "err": {}
     },
     {
       "title": "has the `returnFirstTwoDrivers` function to as its first element",
@@ -40,7 +34,7 @@
     {
       "title": "has the `returnLastTwoDrivers` function to as its last element",
       "fullTitle": "index.js selectingDrivers has the `returnLastTwoDrivers` function to as its last element",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -49,18 +43,12 @@
       "fullTitle": "index.js selectingDrivers allows us to invoke either function from the array",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected [ 'Amari', 'mMo' ] to deeply equal [ 'Amari', 'Mo' ]",
-        "showDiff": true,
-        "actual": "[\n  \"Amari\"\n  \"mMo\"\n]",
-        "expected": "[\n  \"Amari\"\n  \"Mo\"\n]",
-        "stack": "AssertionError: expected [ 'Amari', 'mMo' ] to deeply equal [ 'Amari', 'Mo' ]\n    at Context.<anonymous> (test/indexTest.js:32:47)\n    at processImmediate (node:internal/timers:466:21)"
-      }
+      "err": {}
     },
     {
       "title": "returns a function",
       "fullTitle": "index.js createFareMultiplier() returns a function",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -109,64 +97,25 @@
     {
       "title": "returns the last two drivers when passed returnLastTwoDrivers() as the second argument",
       "fullTitle": "index.js selectDifferentDrivers(arrayOfDrivers, function) returns the last two drivers when passed returnLastTwoDrivers() as the second argument",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected [ 'Amari', 'mMo' ] to deeply equal [ 'Amari', 'Mo' ]",
-        "showDiff": true,
-        "actual": "[\n  \"Amari\"\n  \"mMo\"\n]",
-        "expected": "[\n  \"Amari\"\n  \"Mo\"\n]",
-        "stack": "AssertionError: expected [ 'Amari', 'mMo' ] to deeply equal [ 'Amari', 'Mo' ]\n    at Context.<anonymous> (test/indexTest.js:76:72)\n    at processImmediate (node:internal/timers:466:21)"
-      }
+      "err": {}
     }
   ],
   "pending": [],
-  "failures": [
-    {
-      "title": "should return an array of the last two drivers",
-      "fullTitle": "index.js returnLastTwoDrivers() should return an array of the last two drivers",
-      "duration": 4,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected [ 'Amari', 'mMo' ] to deeply equal [ 'Amari', 'Mo' ]",
-        "showDiff": true,
-        "actual": "[\n  \"Amari\"\n  \"mMo\"\n]",
-        "expected": "[\n  \"Amari\"\n  \"Mo\"\n]",
-        "stack": "AssertionError: expected [ 'Amari', 'mMo' ] to deeply equal [ 'Amari', 'Mo' ]\n    at Context.<anonymous> (test/indexTest.js:16:75)\n    at processImmediate (node:internal/timers:466:21)"
-      }
-    },
-    {
-      "title": "allows us to invoke either function from the array",
-      "fullTitle": "index.js selectingDrivers allows us to invoke either function from the array",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected [ 'Amari', 'mMo' ] to deeply equal [ 'Amari', 'Mo' ]",
-        "showDiff": true,
-        "actual": "[\n  \"Amari\"\n  \"mMo\"\n]",
-        "expected": "[\n  \"Amari\"\n  \"Mo\"\n]",
-        "stack": "AssertionError: expected [ 'Amari', 'mMo' ] to deeply equal [ 'Amari', 'Mo' ]\n    at Context.<anonymous> (test/indexTest.js:32:47)\n    at processImmediate (node:internal/timers:466:21)"
-      }
-    },
-    {
-      "title": "returns the last two drivers when passed returnLastTwoDrivers() as the second argument",
-      "fullTitle": "index.js selectDifferentDrivers(arrayOfDrivers, function) returns the last two drivers when passed returnLastTwoDrivers() as the second argument",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected [ 'Amari', 'mMo' ] to deeply equal [ 'Amari', 'Mo' ]",
-        "showDiff": true,
-        "actual": "[\n  \"Amari\"\n  \"mMo\"\n]",
-        "expected": "[\n  \"Amari\"\n  \"Mo\"\n]",
-        "stack": "AssertionError: expected [ 'Amari', 'mMo' ] to deeply equal [ 'Amari', 'Mo' ]\n    at Context.<anonymous> (test/indexTest.js:76:72)\n    at processImmediate (node:internal/timers:466:21)"
-      }
-    }
-  ],
+  "failures": [],
   "passes": [
     {
       "title": "should return a new array containing the first two drivers from the passed-in array",
       "fullTitle": "index.js returnFirstTwoDrivers() should return a new array containing the first two drivers from the passed-in array",
-      "duration": 1,
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return an array of the last two drivers",
+      "fullTitle": "index.js returnLastTwoDrivers() should return an array of the last two drivers",
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -180,14 +129,21 @@
     {
       "title": "has the `returnLastTwoDrivers` function to as its last element",
       "fullTitle": "index.js selectingDrivers has the `returnLastTwoDrivers` function to as its last element",
-      "duration": 1,
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "allows us to invoke either function from the array",
+      "fullTitle": "index.js selectingDrivers allows us to invoke either function from the array",
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns a function",
       "fullTitle": "index.js createFareMultiplier() returns a function",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -229,6 +185,13 @@
     {
       "title": "returns the first two drivers when passed returnFirstTwoDrivers() as the second argument",
       "fullTitle": "index.js selectDifferentDrivers(arrayOfDrivers, function) returns the first two drivers when passed returnFirstTwoDrivers() as the second argument",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the last two drivers when passed returnLastTwoDrivers() as the second argument",
+      "fullTitle": "index.js selectDifferentDrivers(arrayOfDrivers, function) returns the last two drivers when passed returnLastTwoDrivers() as the second argument",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
